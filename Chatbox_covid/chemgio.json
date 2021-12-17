@@ -39,15 +39,20 @@
          "responses": ["Thức khuya em tỉnh bằng trà, yêu anh em trả bằng tình được không?", "Chim thường yêu trời, con nít thường yêu kem.Anh thì rất yêu đời, và cũng rất yêu em.","Có một đốm lửa nhỏ. Thắp lên hạnh phúc to.Em đã có ai ngỏ. Hay là để anh lo.","Em đây không thích la cà. Em đây chỉ thích mặn mà với anh.","Bệnh nào cũng có thuốc chữa nhưng duy nhất và sẽ không bao giờ có thuốc chữa được bệnh em ngừng yêu anh."],
          "context": ["search_love"]
         },
+        {"tag": "friend",
+         "patterns": ["friend", "friend options", "Give me a friend topic", "List some friend sentences", "How about friend?"  ],
+         "responses": ["Đôi khi bạn thân cũ còn đau hơn là người yêu cũ", "Người bạn chân thực luôn luôn là: Khi bạn lầm lỗi, người đó không nghĩ là bạn thường xuyên làm như vậy.","Ế là xu thế, nên hãy sống tử tế và tỏa sáng nhé các chế.","Không bao giờ bán đứng bạn bè… khi chưa được giá.","Nếu bạn bị ăn hiếp hãy nhanh tay gọi cho tôi…Tôi sẽ nhanh chân chạy tới…gọi cảnh sát."],
+         "context": ["search_love"]
+        },
         {"tag": "search_blood_pressure_by_patient_id",
          "patterns": [],
          "responses": ["Loading Blood pressure result for Patient"],
          "context": [""]
         },
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Please provide pharmacy name"],
-         "context": ["search_pharmacy_by_name"]
+        {"tag": "topic_search",
+         "patterns": ["Find me a topic", "Find topic", "List of topic", "how many topic", "Search topic" ],
+         "responses": ["Chủ đề gồm có Vui,  Buồn, Trung Tính, Nam, Nữ, Cặp đôi, Bạn bè, vui vẻ, tình yêu, đồ ăn, triết lý"],
+         "context": ["search_topic_by_name"]
         },
         {"tag": "search_pharmacy_by_name",
          "patterns": [],
