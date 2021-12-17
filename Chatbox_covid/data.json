@@ -1,53 +1,58 @@
 {"intents": [
         {"tag": "greeting",
          "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "responses": ["Xin Chào", "Rất vui khi chém gió với bạn", "Thoải mái chém gió nha", "Hi bạn", "Hello Bạn ơi", "Chào người anh em nhé"],
          "context": [""]
         },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "responses": ["Rảnh caphê nhé", "Thoải con gà mái đi", "Tạm biệt", "Hẹn Gặp lại ok!"],
          "context": [""]
         },
         {"tag": "thanks",
          "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "responses": ["Hông có chi", "Đã chém gió thì không cần nghĩ ngợi :D LOL" , "Vô tư đi", "Chuyển nhỏ như con thỏ!"],
          "context": [""]
         },
         {"tag": "noanswer",
          "patterns": [],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "responses": ["Xin lỗi cái này hông có trong từ điển", "Cho Xin thêm chút thông đi!", "Hông hiểu đang nói về gì cả!", "Khó quá bỏ qua, làm lại anh trai ơi!"],
          "context": [""]
         },
         {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered","what you can do"],
+         "responses": [" Con Bot này chuyên cung cấp câu chém gió thư giãn theo đề tài. Cho tên đề tài là chém phù phù?", "Cứ cho tên đề tài thì sẽ chém gió thôi. Chủ đề gồm Happy, Sad , Neutral, Man, Woman, Couple, Friends, Food, Fun, Love, Philosophy"],
          "context": [""]
         },
-        {"tag": "adverse_drug",
-         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-         "responses": ["Navigating to Adverse drug reaction module"],
+        {"tag": "food",
+         "patterns": ["Food", "Food options", "Give me a food topic", "List some food sentences", "How about food?" ],
+         "responses": ["Mập thì đẹp. Ốm thì dễ thương. Lòi xương thì dễ mến.", "Yêu thương có thể lấp đầy hết tất cả chỉ trừ… bao tử.", "Còn tình cảm nào chân thành hơn tình yêu dành cho thức ăn.", "Yêu là phải nói, cũng giống như đói cần phải ăn.", "Độc lập tự do, ăn no rồi ngủ."],
          "context": [""]
         },
-        {"tag": "blood_pressure",
-         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
-         "responses": ["Navigating to Blood Pressure module"],
-         "context": [""]
+        {"tag": "happy",
+         "patterns": ["happy", "happy options", "Give me a happy topic", "List some happy sentences", "How about happy?"  ],
+         "responses": ["Bố mẹ cho tiền ăn học, học không được thì cố mà ăn thôi.", "Hoa hướng dương chỉ luôn hướng về một phía. Bông hoa ấy cũng giống như em vậy. Cả đời em cũng chỉ hướng về phía anh.", "Anh ơi gió lạnh gần kề. Anh mau thu xếp mà về với em."],
+         "context": ["search_happy"]
         },
-        {"tag": "blood_pressure_search",
-         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-         "responses": ["Please provide Patient ID", "Patient ID?"],
-         "context": ["search_blood_pressure_by_patient_id"]
+        {"tag": "love",
+         "patterns": ["love", "love options", "Give me a love topic", "List some love sentences", "How about love?"  ],
+         "responses": ["Thức khuya em tỉnh bằng trà, yêu anh em trả bằng tình được không?", "Chim thường yêu trời, con nít thường yêu kem.Anh thì rất yêu đời, và cũng rất yêu em.","Có một đốm lửa nhỏ. Thắp lên hạnh phúc to.Em đã có ai ngỏ. Hay là để anh lo.","Em đây không thích la cà. Em đây chỉ thích mặn mà với anh.","Bệnh nào cũng có thuốc chữa nhưng duy nhất và sẽ không bao giờ có thuốc chữa được bệnh em ngừng yêu anh."],
+         "context": ["search_love"]
+        },
+        {"tag": "friend",
+         "patterns": ["friend", "friend options", "Give me a friend topic", "List some friend sentences", "How about friend?"  ],
+         "responses": ["Đôi khi bạn thân cũ còn đau hơn là người yêu cũ", "Người bạn chân thực luôn luôn là: Khi bạn lầm lỗi, người đó không nghĩ là bạn thường xuyên làm như vậy.","Ế là xu thế, nên hãy sống tử tế và tỏa sáng nhé các chế.","Không bao giờ bán đứng bạn bè… khi chưa được giá.","Nếu bạn bị ăn hiếp hãy nhanh tay gọi cho tôi…Tôi sẽ nhanh chân chạy tới…gọi cảnh sát."],
+         "context": ["search_love"]
         },
         {"tag": "search_blood_pressure_by_patient_id",
          "patterns": [],
          "responses": ["Loading Blood pressure result for Patient"],
          "context": [""]
         },
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Please provide pharmacy name"],
-         "context": ["search_pharmacy_by_name"]
+        {"tag": "topic_search",
+         "patterns": ["Find me a topic", "Find topic", "List of topic", "how many topic", "Search topic" ],
+         "responses": ["Chủ đề gồm có Vui,  Buồn, Trung Tính, Nam, Nữ, Cặp đôi, Bạn bè, vui vẻ, tình yêu, đồ ăn, triết lý"],
+         "context": ["search_topic_by_name"]
         },
         {"tag": "search_pharmacy_by_name",
          "patterns": [],
