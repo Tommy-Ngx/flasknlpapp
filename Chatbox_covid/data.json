@@ -34,15 +34,45 @@
          "responses": ["Bố mẹ cho tiền ăn học, học không được thì cố mà ăn thôi.", "Hoa hướng dương chỉ luôn hướng về một phía. Bông hoa ấy cũng giống như em vậy. Cả đời em cũng chỉ hướng về phía anh.", "Anh ơi gió lạnh gần kề. Anh mau thu xếp mà về với em."],
          "context": ["search_happy"]
         },
-        {"tag": "love",
-         "patterns": ["love", "love options", "Give me a love topic", "List some love sentences", "How about love?"  ],
-         "responses": ["Thức khuya em tỉnh bằng trà, yêu anh em trả bằng tình được không?", "Chim thường yêu trời, con nít thường yêu kem.Anh thì rất yêu đời, và cũng rất yêu em.","Có một đốm lửa nhỏ. Thắp lên hạnh phúc to.Em đã có ai ngỏ. Hay là để anh lo.","Em đây không thích la cà. Em đây chỉ thích mặn mà với anh.","Bệnh nào cũng có thuốc chữa nhưng duy nhất và sẽ không bao giờ có thuốc chữa được bệnh em ngừng yêu anh."],
+        {"tag": "fun",
+         "patterns": ["happy", "happy options", "Give me a happy topic", "List some happy sentences", "How about happy?"  ],
+         "responses": ["Yêu thương có thể lấp đầy hết tất cả chỉ trừ… bao tử.", "Thanh xuân như một ly trà. Ăn vài miếng bánh hết bà thanh xuân", "Một phụ nữ toàn diện là: Sáng diện, trưa diện, chiều diện, tối diện…"],
+         "context": ["search_happy"]
+        },
+        {"tag": "fun",
+         "patterns": ["fun", "fun options", "Give me a fun topic", "List some fun sentences", "How about fun?"  ],
+         "responses": ["Tình yêu chỉ là hạt cát, vì đồ ăn đã lấn át tình yêu.","Yêu thương có thể lấp đầy hết tất cả chỉ trừ… bao tử.", "Thanh xuân như một ly trà. Ăn vài miếng bánh hết bà thanh xuân", "Một phụ nữ toàn diện là: Sáng diện, trưa diện, chiều diện, tối diện…"],
+         "context": ["search_fun"]
+        },
+        {"tag": "philosophy",
+         "patterns": ["philosophy", "philosophy options", "Give me a philosophy topic", "List some philosophy sentences", "How about philosophy?"  ],
+         "responses": ["Xăng … có thể cạn, lốp … có thể mòn, nhưng số máy, số khung thì không bao giờ thay đổi.", "Ly dị là sự kiện mà người đàn ông phải giặt đồ cho mình…thay vì trước đó phải giặt đồ cho cả hai.","TỰ KỶ là gì??? Là tự mình sống hết thế kỷ.","Chết vì người phụ nữ bạn yêu thì dễ hơn sống chung với họ.","Dân thường chơi đẹp đè bẹp dân chơi."],
          "context": ["search_love"]
         },
         {"tag": "friend",
          "patterns": ["friend", "friend options", "Give me a friend topic", "List some friend sentences", "How about friend?"  ],
          "responses": ["Đôi khi bạn thân cũ còn đau hơn là người yêu cũ", "Người bạn chân thực luôn luôn là: Khi bạn lầm lỗi, người đó không nghĩ là bạn thường xuyên làm như vậy.","Ế là xu thế, nên hãy sống tử tế và tỏa sáng nhé các chế.","Không bao giờ bán đứng bạn bè… khi chưa được giá.","Nếu bạn bị ăn hiếp hãy nhanh tay gọi cho tôi…Tôi sẽ nhanh chân chạy tới…gọi cảnh sát."],
-         "context": ["search_love"]
+         "context": ["search_friend"]
+        },
+        {"tag": "man",
+         "patterns": ["man", "man options", "Give me a man topic", "List some man sentences", "How about man?"  ],
+         "responses": ["Bi kịch của đời người là đam mê đặc biệt với ẩm thực nhưng lại tích cực giảm cân.", "Có lẽ cô đơn lâu quá khiến người ta trở nên dễ tính, chỉ cần một ánh mắt cũng đủ làm ta thao thức cả đêm.","Gương kia ngự ở trên tường…bao giờ ta gặp được người yêu ta… gương cười gương bảo lại rằng : “Mặt mày mà có người yêu tao quỳ”.","Đi xe máy bốc đầu sẽ nhanh về quê hương hơn nhưng mà về 2 lần 1 tháng"],
+         "context": ["search_man"]
+        },
+        {"tag": "woman",
+         "patterns": ["woman", "woman options", "Give me a woman topic", "List some woman sentences", "How about woman?"  ],
+         "responses": ["Muốn bắt cọp thì vào sở thú, muốn tìm chỗ trú thì vào tim em.", "Thanh xuân như một chén trà. Đậm nhạt cũng được miễn là có anh.","Ai cũng tìm một nửa của mình còn thiếu nhưng riêng tôi thì không! Bởi vì tôi không bị đứt đôi người. Tôi quá hoàn hảo.","Thịt mỡ dưa hành câu đối đỏ. Em đây bé nhỏ chẳng ai yêu."],
+         "context": ["search_woman"]
+        },
+        {"tag": "sad",
+         "patterns": ["sad", "sad options", "Give me a sad topic", "List some sad sentences", "How about sad?"  ],
+         "responses": ["Một vài người bước vào cuộc đời chúng ta và để lại dấu chân của họ trong trái tim chúng ta, nhưng cũng có những người bước vào cuộc đời chúng ta và chúng ta chỉ muốn để lại dấu chân của mình trên mặt họ.", "Tôi nghĩ tôi đang bắt đầu có vấn đề về thị lực, bởi vì kể từ khi kết hôn đến giờ tôi không nhìn thấy tiền đâu trong căn nhà của mình.","Nếu tình yêu là ánh sáng thì hôn nhân là hoá đơn tiền điện !","Một người vợ tốt luôn tha thứ cho chồng khi cô ta sai."],
+         "context": ["search_sad"]
+        },
+        {"tag": "couple",
+         "patterns": ["couple", "couple options", "Give me a couple topic", "List some couple sentences", "How about couple?"  ],
+         "responses": ["Nếu mỗi lần nhớ tới em anh được 500 đồng chắc giờ này anh đã vượt xa Bill Gates.", "Nhà anh có cái bàn thờ, đèn nhang có đủ chỉ chờ mỗi em.","Trên mạng em trắng nõn nà, ngoài đời em giống đàn bà châu phi","“Bước đến nhà em, bóng xế tà. Đứng chờ năm phút bố em ra. Lơ thơ phía trước vài con chó. Lác đác đằng sau chổi lông gà”"],
+         "context": ["search_couple"]
         },
         {"tag": "search_blood_pressure_by_patient_id",
          "patterns": [],
